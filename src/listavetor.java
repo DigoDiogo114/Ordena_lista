@@ -199,16 +199,21 @@ public class listavetor extends JFrame {
 	}
 	
 	public void removerDuplicados() {
-		for (int i = 0; i < tamanhoLista; i++) {
-			String strCompare = listNomes[i];
-			for (int j = i + 1; j < tamanhoLista; j++) {
-				if (strCompare.equals(listNomes[j])) {
-					listNomes[j] = null;
-				}
-			}
-		}
-		compactarLista();
+    for (int i = 0; i < tamanhoLista; i++) {
+        String Compare = listNomes[i];
+        for (int j = i + 1; j < tamanhoLista; j++) {
+            if (Compare.equals(listNomes[j])) {
+                for (int k = j; k < tamanhoLista - 1; k++) {
+                    listNomes[k] = listNomes[k + 1];
+                }
+           
+                tamanhoLista--;
+                j--; 
+            }
+        }
+    }
 	}
+
 	
 	public void removerVazio() {
 		for (int i = 0; i < tamanhoLista; i++) {
