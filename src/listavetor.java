@@ -1,3 +1,5 @@
+// Grupo: Davi Alves Pedroso, Diogo Sagiorato de Oliveira & Gabriel Rodrigues Bittencourt
+
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 
@@ -36,7 +38,7 @@ public class listavetor extends JFrame {
 		txtArea.setBackground(Color.gray);
 		getContentPane().add(txtArea);
 		
-		btnAZ = new JButton(new AbstractAction("TO AZ") {
+		btnAZ = new JButton(new AbstractAction("A-Z") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -50,7 +52,7 @@ public class listavetor extends JFrame {
 		btnAZ.setBounds(320, 10, 170, 30);
 		getContentPane().add(btnAZ);
 		
-		btnZA = new JButton(new AbstractAction("TO ZA") {
+		btnZA = new JButton(new AbstractAction("Z-A") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -64,7 +66,7 @@ public class listavetor extends JFrame {
 		btnZA.setBounds(320, 50, 170, 30);
 		getContentPane().add(btnZA);
 		
-		btnReverse = new JButton(new AbstractAction("Lança o reverse") {
+		btnReverse = new JButton(new AbstractAction("Inverter") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -77,7 +79,7 @@ public class listavetor extends JFrame {
 		btnReverse.setBounds(320, 90, 170, 30);
 		getContentPane().add(btnReverse);
 		
-		btnRmvDuplicados = new JButton(new AbstractAction("Remove os gemeos") {
+		btnRmvDuplicados = new JButton(new AbstractAction("Remover duplicados") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -91,7 +93,7 @@ public class listavetor extends JFrame {
 		btnRmvDuplicados.setBounds(320, 130, 170, 30);
 		getContentPane().add(btnRmvDuplicados);
 
-		btnRmvVazio = new JButton(new AbstractAction("Remove void") {
+		btnRmvVazio = new JButton(new AbstractAction("Remover vazios") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -104,7 +106,7 @@ public class listavetor extends JFrame {
 		btnRmvVazio.setBounds(320, 170, 170, 30);
 		getContentPane().add(btnRmvVazio);
 
-		btnTrim = new JButton(new AbstractAction("TRIM DO IT") {
+		btnTrim = new JButton(new AbstractAction("Aplicar Trim()") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -117,7 +119,7 @@ public class listavetor extends JFrame {
 		btnTrim.setBounds(320, 210, 170, 30);
 		getContentPane().add(btnTrim);
 		
-		btnToUp = new JButton(new AbstractAction("Pra cima") {
+		btnToUp = new JButton(new AbstractAction("Converter MAIUSCULO") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -130,7 +132,7 @@ public class listavetor extends JFrame {
 		btnToUp.setBounds(320, 250, 170, 30);
 		getContentPane().add(btnToUp);
 		
-		btnToDown = new JButton(new AbstractAction("Pra baixo") {
+		btnToDown = new JButton(new AbstractAction("Converter minúsculo") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -143,7 +145,7 @@ public class listavetor extends JFrame {
 		btnToDown.setBounds(320, 290, 170, 30);
 		getContentPane().add(btnToDown);
 		
-		btnToCapitalizar = new JButton(new AbstractAction("Capitalismo") {
+		btnToCapitalizar = new JButton(new AbstractAction("Converter Capitalizar") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
